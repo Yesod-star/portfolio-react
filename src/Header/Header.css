@@ -1,0 +1,16 @@
+.header-armazem{
+    background-color: rgba(51,85,153,0.2);
+    color: #FAFAFA;
+    width: 80vw;
+    margin: 0 10vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Header{
+  padding: 0 10%;
+  text-align: left;
+}

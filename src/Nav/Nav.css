@@ -1,0 +1,53 @@
+.Nav{
+  padding: 0 10%;
+}
+
+.Url-Nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Url-Nav li{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+
+.Url-Nav li a {
+  background-image: linear-gradient(
+    to right,
+    #54a6f9,
+    #54a6f9 50%,
+    #FAFAFA 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.Url-Nav li a:before {
+  content: '';
+  background: #54a6f9;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Url-Nav li a:hover {
+ background-position: 0;
+ cursor: pointer;
+}
+
+.Url-Nav li a:hover::before {
+  width:100%;
+}
