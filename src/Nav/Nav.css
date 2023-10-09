@@ -51,3 +51,111 @@
 .Url-Nav li a:hover::before {
   width:100%;
 }
+
+.Url-Nav-Mob{
+  display: none;
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) {
+  .Nav{
+    padding: 0;
+  }
+
+  .Url-Nav li a {
+    font-size: 0.8em;
+  }
+
+
+}
+
+@media (max-width: 1000px){
+  .Nav{
+    padding: 0 0 0 10%;
+  }
+
+  .Url-Nav{
+    display: none;
+  }
+
+  .Url-Nav-Mob{
+    display: block;
+  }
+
+  .Url-Nav-Mob ul{
+    display: block;
+    flex-wrap: wrap;
+    margin-top: 5em;
+  }
+  
+  .Url-Nav-Mob ul li{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+  }
+
+    /* Hamburguer */
+  .burger-menu {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .burger-bar {
+    width: 4em;
+    height: 0.5em;
+    background-color: rgb(0, 183, 255);
+    border-radius: 0.5em;
+    z-index: 2;
+  }
+
+  .menu {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(0, 36, 50);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+  }
+
+  /* ------------- sliding menu ------------------ */
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: inherit;
+  }
+
+  /* ----- animations--------- */
+  /* clicked */
+  .burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+    translate: 10vw;
+  }
+
+  .burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+    translate: 10vw;
+  }
+
+  .burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.75em, 1.25em);
+    transition: ease-out 0.5s;
+    translate: 10vw;
+  }
+
+  /* unclicked */
+  .burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+}

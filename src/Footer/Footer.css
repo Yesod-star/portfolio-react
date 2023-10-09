@@ -1,10 +1,64 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: local('ProximaNova'),
+         url('../Components/Fonts/ProximaNova/ProximaNova.otf') format('otf');
+}
+
 .footer-armazem{
-    background-color: green;
+    background-color: transparent;
+    color: white;
     width: 80vw;
     margin: 0 10vw;
     height: 15vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    font-family: 'ProximaNova';
+}
+
+#left-footer{
+    font-size: 1.1em;
+    width: 50%;
+    text-align: center;
+}
+  
+#right-footer ul{
+display: flex;
+flex-wrap: wrap;
+}
+  
+#right-footer ul li{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+    margin-left: 2em;
+}
+
+#right-footer ul li:first-child{
+    margin-left: 0;
+}
+
+#right-footer ul li:hover{
+    color: #AAA;
+    cursor: pointer;
+}
+
+li a svg{
+    font-size: 2em;
+}
+
+@media (max-width: 1500px) {
+    .footer-armazem{
+        display: inline-block;
+        text-align: center;
+        margin-top: 2%;
+    }
+    #left-footer, #right-footer{
+        width: 100%;
+    }
+    #right-footer ul{
+        justify-content: space-evenly;
+        padding: 0;
+    }
 }

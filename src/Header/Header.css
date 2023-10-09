@@ -1,5 +1,4 @@
 .header-armazem{
-    background-color: rgba(51,85,153,0.2);
     color: #FAFAFA;
     width: 80vw;
     margin: 0 10vw;
@@ -13,4 +12,40 @@
 .Header{
   padding: 0 10%;
   text-align: left;
+}
+
+#logo{
+  width: 5em;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  padding: 0.5em;
+  border: 0.2em #0053a7 solid;
+}
+
+#logo:hover{
+  background-color: #54a6f9;
+  transition: 1s;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px ) and (min-width: 1000px) {
+  .Header{
+    padding: 0;
+    text-align: left;
+  }
+
+  #logo{
+    width: 3em;
+  }
+}
+
+@media (max-width: 1000px ){
+  .Header{
+    padding: 0;
+    text-align: left;
+  }
+
+  #logo{
+    width: 2.5em;
+  }
 }

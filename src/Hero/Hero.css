@@ -1,5 +1,5 @@
 .armazem{
-    background-color: blueviolet;
+    background-color: rgba(0,100,255,0.7);
     width: 80vw;
     margin: 0 10vw;
     height: 70vh;
@@ -7,4 +7,5 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
 }
