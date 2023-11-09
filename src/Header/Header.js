@@ -5,14 +5,14 @@ import logo from '../Components/img/LogoGabriel.png';
 
 class Header extends React.Component {
   render() {
-    return(
-    <div className='header-armazem'>
-      <div className="Header">
-        <img src={logo} alt="Logo" id='logo'/>
+    return (
+      <div className='header-armazem'>
+        <div className="Header">
+          <img src={logo} alt="Logo" id='logo' />
+        </div>
+        <Nav onContentChange={this.props.onContentChange} />
       </div>
-      <Nav/>
-    </div>
-    )
+    );
   }
 }
 

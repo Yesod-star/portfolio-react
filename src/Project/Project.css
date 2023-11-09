@@ -1,0 +1,81 @@
+.Project{
+    width: 100%;
+    height: 100%;
+}
+
+ .swiper-horizontal{
+    width: 100%;
+    height: 100%;
+}
+
+.seeProject{
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slide-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    border: 1.5px solid black;
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-more,
+  .button-more:after {
+    width: 200px;
+    height: 46px;
+    line-height: 48px;
+  }
+}

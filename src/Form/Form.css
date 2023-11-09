@@ -1,0 +1,103 @@
+.Form{
+  width: 50%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  padding: 0 5% 5% 5%;
+}
+
+.Form h2{
+  font-size: 2em;
+  padding-top: 5%;
+  margin-bottom: 7.5%;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fafafa;
+}
+.Form h2:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #000;
+}
+.Form h2:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #000;
+}
+
+.Form,.Form form{
+  height: 100%;
+}
+
+.Form{
+  box-shadow: 
+  rgba(96, 29, 166, 0.4) -5px 5px, 
+  rgba(80, 49, 166, 0.3) -10px 10px, 
+  rgba(64, 69, 166, 0.2) -15px 15px, 
+  rgba(48, 88, 166, 0.1) -20px 20px, 
+  rgba(32, 108, 166, 0.05) -25px 25px;
+}
+
+.Form input,.Form textarea{
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid #222;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: #000;
+  width: 100%;
+  color: #FAFAFA;
+}
+.Form input::placeholder,.Form  textarea::placeholder{
+  color: #FAFAFA;
+}
+.Form input{
+  min-height: 2em;
+}
+.Form textarea{
+  height: 35%;
+  resize: none;
+}
+.Form input, .Form textarea{
+  box-shadow: 
+  rgba(96, 29, 166, 0.6) 0px 5px, 
+  rgba(80, 49, 166, 0.5) 0px 10px, 
+  rgba(64, 69, 166, 0.4) 0px 15px, 
+  rgba(48, 88, 166, 0.3) 0px 20px, 
+  rgba(32, 108, 166, 0.2) 0px 25px;
+}
+@media (max-width: 1500px ) and (min-width: 1000px) {
+  .Form input,.Form textarea{
+    width: 60%;
+    font-size: 1em;
+  }
+  .Form{
+    width: 100%;
+  }
+  .Form h2{
+    padding-top: 5%;
+    margin-bottom: 2.5%;
+  }
+}
+@media (max-width: 1000px ){
+  .Form input,.Form textarea{
+    width: 80%;
+    font-size: 1em;
+  }
+  .Form{
+    width: 100%;
+  }
+}

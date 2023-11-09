@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import Hero from './Hero/Hero';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import gabriel from './Components/img/young.png';
 
 function App() {
   const particlesInit = async (main) => {
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
+  };
+
+  const [selectedContent, setSelectedContent] = useState('history'); // Default content
+
+  const handleContentChange = (content) => {
+    setSelectedContent(content);
   };
 
   return(
@@ -624,9 +629,11 @@ function App() {
           }
         }
        } />
-       <Header></Header>
-       <Hero></Hero>
-       <Footer></Footer>
+       <Header onContentChange={handleContentChange}/>
+       <Hero selectedContent={selectedContent} />
+       <Footer/>
+       <FloatingWhatsApp phoneNumber="28999881802" accountName="Gabriel Barros" avatar={gabriel} 
+      chatMessage = "Hello there! 🤝 How can I help?"/>
     </div>
   );
 }
