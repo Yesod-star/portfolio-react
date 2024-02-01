@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0f23ef2.css",
+    "main.js": "/static/js/main.21c8b7b4.js",
+    "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
+    "static/media/young.png": "/static/media/young.0a57b9786f2ca8e8d964.png",
+    "static/media/LogoGabriel.png": "/static/media/LogoGabriel.7388caeffb31e074b07f.png",
+    "static/media/ProximaNova.otf": "/static/media/ProximaNova.7bc9ce404c297c24f210.otf",
+    "index.html": "/index.html",
+    "main.a0f23ef2.css.map": "/static/css/main.a0f23ef2.css.map",
+    "main.21c8b7b4.js.map": "/static/js/main.21c8b7b4.js.map",
+    "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0f23ef2.css",
+    "static/js/main.21c8b7b4.js"
+  ]
+}
