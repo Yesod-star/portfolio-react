@@ -15,8 +15,8 @@
 }
 
 .header-armazem #logo{
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 7em;
   border-radius: 50%;
   padding: 0.5em;
 }
@@ -28,8 +28,8 @@
   }
 
   .header-armazem #logo{
-    width: 4em;
-    height: 4em;
+    width: 6em;
+    height: 6em;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   .header-armazem #logo{
-    width: 3.5em;
-    height: 3.5em;
+    width: 5em;
+    height: 5em;
   }
 }

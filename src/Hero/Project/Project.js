@@ -29,7 +29,7 @@ function Project(){
           alt="Slider"
           className='slide-item'/>
           <a href={item.link} className='seeProject'>
-            <button className='button button-more'><span class="text">SEE MORE</span></button>
+            <button className='button button-more'><span className="text">SEE MORE</span></button>
           </a>         
         </SwiperSlide>
       ))}

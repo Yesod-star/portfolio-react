@@ -34,11 +34,21 @@
     font-weight: 500;
 }
 .History .col-md-6  img{
-    width: 30vw;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .small{
   font-size: 1em;
+}
+
+.tech-know{
+  font-size: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  vertical-align: bottom;
+  margin-top: 15px;
 }
 
 @media (max-width: 1500px ) and (min-width: 1000px) {
@@ -46,8 +56,14 @@
         margin: 2em auto auto auto;
     }
 }
-  @media (max-width: 1000px ){
-    .History .col-md-6{
-        margin: auto auto auto auto;
-    }
+
+@media (max-width: 1000px ){
+  .History .col-md-6{
+      margin: auto auto auto auto;
   }
+
+  .History .col-md-6  img{
+    width: 35vw;
+    margin-top: 10px;
+  }
+}

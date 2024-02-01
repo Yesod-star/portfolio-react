@@ -1,4 +1,4 @@
-import Nav from '../Nav/Nav';
+import Nav from './Nav/Nav';
 import React from 'react';
 import './Header.css';
 import logo from '../Components/img/LogoGabriel.png';

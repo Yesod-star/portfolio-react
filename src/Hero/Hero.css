@@ -35,7 +35,15 @@
     border-radius: 20px;
 }
 
-.big{
+@media (max-width: 767px ) {
+    .armazem .armazem-interior{
+        padding: 0 5% 20% 5%;
+    }
+      
+}
+
+.big {
+    min-height: 70vh;
     height: 100%;
 }
 

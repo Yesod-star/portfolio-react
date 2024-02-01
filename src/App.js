@@ -1,11 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import Hero from './Hero/Hero';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import gabriel from './Components/img/young.png';
+import Whatsapp from './Components/Whatsapp/Whatsapp';
 
 function App() {
   const particlesInit = async (main) => {
@@ -632,8 +632,7 @@ function App() {
        <Header onContentChange={handleContentChange}/>
        <Hero selectedContent={selectedContent} />
        <Footer/>
-       <FloatingWhatsApp phoneNumber="28999881802" accountName="Gabriel Barros" avatar={gabriel} 
-      chatMessage = "Hello there! 🤝 How can I help?"/>
+       <Whatsapp/>
     </div>
   );
 }

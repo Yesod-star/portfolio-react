@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Project from '../Project/Project';
-import History from '../History/History';
-import Form from '../Form/Form';
+import Project from './Project/Project';
+import History from './History/History';
+import Form from './Form/Form';
 import './Hero.css';
 
 function Hero({ selectedContent }) {
