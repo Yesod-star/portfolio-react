@@ -71,11 +71,15 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .button-more,
   .button-more:after {
     width: 200px;
     height: 46px;
     line-height: 48px;
+  }
+
+  .seeProject{
+    top: 2em;
   }
 }
