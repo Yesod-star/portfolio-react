@@ -6,14 +6,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './Project.css';
-import {
-  imgCrew,
-  imgCrewMob,
-  imgApiPoke,
-  imgRpgBot,
-  imgDroneLib,
-  imgQlippoth,
-} from '../../Components/imgProjects';
+import imgCrew from '../../Components/imgProjects/img-crew.png';
+import imgCrewMob from '../../Components/imgProjects/img-crew-mob.png';
+import imgApiPoke from '../../Components/imgProjects/api-poke.png';
+import imgRpgBot from '../../Components/imgProjects/rpg-bot.png';
+import imgDroneLib from '../../Components/imgProjects/drone-lib.png';
+import imgQlippoth from '../../Components/imgProjects/qlippoth.jpg';
 
 register();
 
@@ -36,7 +34,7 @@ function Project(){
   }, []);
   
   const data = [
-    {id: '1', image: windowWidth < 768 ? imgCrew : imgCrewMob, link: 'https://github.com/Yesod-star/crew-app'},
+    {id: '1', image: windowWidth > 768 ? imgCrew : imgCrewMob, link: 'https://github.com/Yesod-star/crew-app'},
     {id: '2', image: imgApiPoke, link:'https://github.com/Yesod-star/ApiPokemonCSharp'},
     {id: '3', image: imgRpgBot, link:'https://github.com/Yesod-star/RpgUltimateBot'},
     {id: '4', image: imgDroneLib, link:'https://github.com/Yesod-star/CSharpDroneLib'},
