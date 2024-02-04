@@ -10,6 +10,8 @@ function EmailForm() {
     message: "",
   });
 
+  const [isSubmitted, setSubmitted] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -18,15 +20,32 @@ function EmailForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      const response = await fetch('https://formspree.io/f/mleqjdyq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Form submission failed.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
     <div className="Form">
       <h2>Send me a message.</h2>
       <form onSubmit={handleSubmit}>
-
         <input
           type="email"
           id="email"
@@ -47,28 +66,14 @@ function EmailForm() {
           required
         ></textarea><br /><br />
 
-        <button className="button" type="submit">SUBMIT</button>
+        {isSubmitted ? (
+          <button className="button" disabled type="submit">Message sent! Thank you.</button>
+        ) : (
+          <button className="button" type="submit">SUBMIT</button>
+        )}
       </form>
     </div>
   );
 }
 
-
-  
 export default EmailForm;
-
-// fetch('/your-server-endpoint', {
-//   method: 'POST',
-//   headers: {
-//     'Content-Type': 'application/json',
-//   },
-//   body: JSON.stringify(formData),
-// })
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log('Email sent:', data);
-//   })
-//   .catch(error => {
-//     console.error('Error sending email:', error);
-//   });
-
