@@ -67,7 +67,7 @@ function EmailForm() {
         ></textarea><br /><br />
 
         {isSubmitted ? (
-          <button className="button" disabled type="submit">Message sent! Thank you.</button>
+          <button className="button" disabled type="submit">SENT.</button>
         ) : (
           <button className="button" type="submit">SUBMIT</button>
         )}
